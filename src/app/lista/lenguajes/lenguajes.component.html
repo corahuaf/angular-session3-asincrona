@@ -1,0 +1,13 @@
+<h1 class="text-center">{{titulo}}</h1>
+
+<div class="col-4 offset-5">
+    <input type="text" #nombre>
+
+    <button (click)="agregarCurso(nombre.value)" class="rounded-circle">Add</button>
+
+    <ul>
+        <div *ngFor="let nom of curso">
+            <li>{{nom}}</li>
+        </div>
+    </ul>
+</div>
